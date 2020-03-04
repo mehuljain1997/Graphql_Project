@@ -1,0 +1,20 @@
+  query subscriptions($appId: String!, $artifactIds: ArtifactIdInput!) {
+  subscriptions(appId: $appId,artifactIds: $artifactIds) {
+    appId,
+    userId,
+    role,
+    artifact {
+      elements {
+        artifactIdElement {
+          id
+        }
+        title
+      }
+        },
+    channelSettings {
+      email {
+        frequency
+      }
+    }
+  }
+}

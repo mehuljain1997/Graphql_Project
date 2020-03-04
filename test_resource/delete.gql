@@ -1,0 +1,3 @@
+mutation delete($appId: String!,$userId: String!,$artifactIds: ArtifactIdInput!) {
+  delete(appId: $appId,userId: $userId,artifactIds: $artifactIds) 
+}

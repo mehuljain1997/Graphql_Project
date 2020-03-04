@@ -1,0 +1,21 @@
+  query userSubscriptions($userId: String, ) {
+  userSubscriptions(userId: $userId) {
+    appId,
+    userId,
+    role,
+    state,
+    artifact {
+      elements {
+        artifactIdElement {
+          id
+        }
+        title
+      }
+        },
+    channelSettings {
+      email {
+        frequency
+      }
+    }
+  }
+}

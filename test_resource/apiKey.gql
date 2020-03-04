@@ -1,0 +1,3 @@
+mutation apiKey($appId: String!) {
+  apiKey(appId: $appId)
+}

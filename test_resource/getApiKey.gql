@@ -1,0 +1,7 @@
+query getApiKey($appId: String!) {
+  getApiKey(appId: $appId) {
+    appId,
+    key,
+    createdBy
+  }
+}

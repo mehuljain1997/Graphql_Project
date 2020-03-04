@@ -1,0 +1,13 @@
+mutation unsubscribe($subscriptionId: SubscriptionIdInput!) {
+  unsubscribe(subscriptionId: $subscriptionId) {
+    appId
+    artifactId {
+      elements {
+        id
+      }
+    }
+    userId
+    state
+  }
+}
+

@@ -1,0 +1,26 @@
+mutation subscribeUsers($subscriptionUsersInput: SubscriptionUsersInput!) {
+  subscribeUsers(subscriptionUsersInput: $subscriptionUsersInput) {
+    appId
+    userId
+    role
+    channelSettings {
+          webBell {
+            frequency
+          }
+          email {
+            frequency
+          }
+          mobilePush {
+            frequency
+          }
+        }
+    artifact {
+      elements {
+        artifactIdElement {
+          id
+        }
+        title  
+      }
+    }
+  }
+}
